@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" 
+          href= 
+			"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <style type="text/css">
+        	.header{
+        		background: #f1f1f1;
+        		font: 13px/27px Arial,sans-serif;
+    			position: relative;
+    			height: 60px;
+    			width: 100%;
+           	}
+
+           	.headers{
+           		color: #d93025;
+			    font-size: 20px;
+			    margin: 25px 35px
+           	}
+
+           	.col-form-label{
+           		font-size: 13px;
+           	}
+
+           	.form-control{
+         		height: 26px!important;
+    			padding: 1px 8px!important;
+    			font-size: 14px!important;
+           	}
+    
+           	.text{
+           		font-size: 12px;
+           		height: 18px;
+           		margin-left: 1.3em;
+           		margin-bottom: 1.7em;
+           	}
+
+           	.search{
+           		font-size: 0.7em!important;
+           		border: 1px solid #0275d8;
+           		font-weight: bold!important;
+           		color: white;
+           		background-color: #0275d8;
+           	}
+
+           	.form-control:focus{
+           		outline: none!important;
+           		border: 1px solid blue!important;
+           		box-shadow: none!important;
+           	}
+
+           	.links{
+        		margin-left: 93em!important;
+        		
+        	}
+
+        	.links a{
+        		color: rgba(0,0,0,0.87);
+    			text-decoration: none;
+        	}
+
+        </style>
+    </head>
+<body>
+	<div class="header">
+		<div class="link ">
+    		<p class="links p-4">
+    			<a href="image.html">Google Image Search</a>
+    			<a href="index.html" class="ml-4">Google Search</a>
+    		</p>
+    	</div>
+	</div>
+	<div class="headers">
+		<p style="margin-left: 10px; font-weight: 500;">Advanced Search</p>
+	</div>
+	<hr>
+	<div class="row d-flex justify-content-between p-4 ml-2 no-gutters">
+		<div class="col-md-6">
+			<p style="font-size: 18px; font-weight: 400;">Find pages with...</p>
+
+			<form action="https://google.com/search">
+				<div class="form-group row mb-1">
+					<label for="all" class="col-sm-3 col-form-label">all these words:</label>
+				    <div class="col-sm-9">
+				      <input type="text" class="form-control rounded-0" id="all" name="as_q">
+				    </div>
+				</div>
+
+				<div class="form-group row mb-1">
+					<label for="this" class="col-sm-3 col-form-label">this exact word or phrase:</label>
+				    <div class="col-sm-9">
+				      <input type="text" class="form-control rounded-0" id="this" name="as_epq">
+				    </div>
+				</div>
+				 
+				<div class="form-group row mb-1">
+					<label for="any" class="col-sm-3 col-form-label">any of these words:</label>
+				    <div class="col-sm-9">
+				      <input type="text" class="form-control rounded-0" id="any" name="as_oq">
+				    </div>
+				</div>
+
+				<div class="form-group row mb-1">
+					<label for="none" class="col-sm-3 col-form-label">none of these words:</label>
+				    <div class="col-sm-9">
+				      <input type="text" class="form-control rounded-0" id="none" name="as_eq">
+				    </div>
+				</div>
+
+				<div class="form-group row mb-1">
+					<label for="range" class="col-sm-3 col-form-label">numbers ranging from:</label>
+				    <div class="col-sm-9">
+				      <!--<input type="text" class="form-control rounded-0" id="range" >-->
+
+				      <div class="form-row">
+				      	<div class="form-group col-md-6">
+				      		<input type="text" class="form-control rounded-0" id="range" name="as_nlo">
+				      		
+				      	</div>
+				      	<div class="col-md-1 text-center">
+				      		to
+				      	</div>
+				      	<div class="form-group col-md-5">
+				      		<input type="text" class="form-control rounded-0" id="range" name="as_nhi">
+				      	</div>
+				      </div>
+
+			    </div>
+				</div>
+			
+			<div class="float-right">
+				<input type="submit" value="Advanced Search" class="search  px-3 py-2">
+			</div>
+			</form>
+		</div>
+
+		<div class="col-md-6">
+			<p style="font-size: 13px; font-weight: 500;" class="mb-4">To do this in the search box.</p>
+			<p class="text">Type the important words: tri-colour rat terrier</p>
+			<p class="text">Put exact words in quotes: "rat terrier"</p>
+			<p class="text">Type OR between all the words you want: miniature OR standard
+			</p>
+			<p class="text">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</p>
+			<p class="text">Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</p>
+		</div>
+	</div>
+</body>
+</html>

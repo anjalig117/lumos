@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" 
+          href= 
+			"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+			<script type="text/javascript">
+				
+				document.addEventListener('DOMContentLoaded', () =>{
+					document.querySelector('#lucky').onclick = () =>{
+						var input = document.createElement("input");
+						input.setAttribute("type", "hidden");
+						input.setAttribute("name", "btnI");
+						document.querySelector('#lucky').append(input);
+					};
+					
+				});
+
+			</script>
+        <style type="text/css">
+        	body, html {
+    			font-size: small;
+			}
+        	.center-box{
+        		margin-top: 14%;
+        		text-align: center;
+        	}
+
+        	#logo{
+        		margin-bottom: 1.7em;
+        	}
+
+        	input[type=text]{
+        		border-radius: 80px;
+        		border-color: #D3D3D3;
+        		border-width: 1px;
+        		width: 28em;
+        		height: 2.5em;
+        		font-size: 1.5em;
+        	}
+
+        	.form-control:focus{
+        		border-radius: 80px;
+        		outline: none;
+        		box-shadow: none!important;
+        		border-color: #D3D3D3!important;
+        		background-color: transparent!important;
+        		border-left: 0!important;
+        	}
+
+        	.input-group:hover{
+        		box-shadow:  0 1px 1px 0 #D3D3D3, 0 1px 5px 0 #D3D3D3;
+        		border-radius: 80px;
+        		border-top-left-radius: 80px!important;
+        		border-bottom-left-radius: 80px!important;
+        	}
+
+        	.input-group-text{
+        		/*border-radius: 80px!important;*/
+        		border-top-left-radius: 25px!important;
+        		border-bottom-left-radius: 25px!important;
+        		background: none;
+        	}
+        	
+        	.input-group{
+        		width: 43em!important;
+        		margin: auto;
+        		margin-bottom: 2.3em!important;
+        	}
+
+
+        	.icon{
+        		color: #C0C0C0;
+        		font-size: 17px;
+        		font-weight: 50;
+        	}
+
+        	.google-search{
+        		color: #5F6368!important;
+    			font-family: sans-serif;
+    			font-size: 14px;
+    			background-color: #f2f2f2;
+    			border: 1px solid #f2f2f2;
+    			border-radius: 4px;
+    			margin: 11px 4px;
+   			 	padding: 0 16px;
+    			line-height: 27px;
+    			height: 36px;
+    			min-width: 54px;
+    			text-align: center;
+        	}
+
+        	.google-search:hover{
+        		border: 1px solid #A9A9A9;
+        		color: black!important;
+        	}
+
+        	.google-search:active{
+        		border: 1px solid blue!important;
+        	}
+
+        	.links{
+        		margin-left: 92em!important;
+        		
+        	}
+
+        	.links a{
+        		color: rgba(0,0,0,0.87);
+    			text-decoration: none;
+        	}
+
+        </style>
+    </head>
+    <body>
+    	<div class="link ">
+    		<p class="links p-4">
+    			<a href="image.html">Google Image Search</a>
+    			<a href="advance.html" class="ml-4">Google Advanced Search</a>
+    		</p>
+    	
+    	<div class="container">
+    		<div class="center-box  ">
+    		<img src="google.jpg" height="92" width="auto" id="logo">	
+    			<form action="https://google.com/search" class="mt-0 form">
+            <!--<input type="text" name="q">
+
+            <div class="input-icons">
+            	<i class = "fa fa-user icon"></i>
+            	<input type="text" name="q" class="input-field">
+            </div>-->
+
+           <div class="input-group">
+       		 <div class="input-group-prepend">
+          		<div class="input-group-text"><i class="fa fa-search secondary icon p-1" aria-hidden="true"></i></div>
+        	</div>
+       		 <input type="text" class="form-control border-left-0" name="q">
+      		</div>
+    		
+      		<div class="container">
+      			 <p>
+       				<input type="submit" value="Google Search" class="google-search rounded text-dark mr-3">
+       				<input type="submit" value="I'm Feeling Lucky" class="google-search rounded text-dark mr-3" id="lucky">
+
+      			</p>
+      			
+      		</div>
+        </form>
+    		</div>
+    	</div>
+</div>
+        
+    </body>
+</html>
